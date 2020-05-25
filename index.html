@@ -10,7 +10,6 @@
     <script type="text/javascript">
         (function(){
             emailjs.init("user_AYvn8N4gI8U3NHcCqqbFu");
-            emailjs.send("gmail", "rosie", {"from_name":"joe","project_request":"testing","from_email":"joe.napper@gmx.com"})
         })();
     </script>
 </head>
@@ -63,7 +62,7 @@
     <div class="suggestions-form">
         <h2>Have an idea for another game we can add?</h2>
         <p>Send us your ideas and if we take your suggestion you will be credited on the game!</p>
-        <form>
+        <form onsubmit="return sendMail(this);">
             <div class="form">  
                 <div>
                     <div>
@@ -95,6 +94,8 @@
 
     <!-- JavaScript Links -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
+
     <!-- End -->
 </body>
 </html>
