@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Brand</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_AYvn8N4gI8U3NHcCqqbFu");
+            emailjs.send("gmail", "rosie", {"from_name":"joe","project_request":"testing","from_email":"joe.napper@gmx.com"})
+        })();
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -57,10 +64,25 @@
         <h2>Have an idea for another game we can add?</h2>
         <p>Send us your ideas and if we take your suggestion you will be credited on the game!</p>
         <form>
-            <input type="text" placeholder="Enter Name" name="name" required>
-            <input type="text" placeholder="Enter Email" name="email" required>
-            <textarea name="suggestion">Enter your suggestions here...</textarea>
-            <button>Submit</button>
+            <div class="form">  
+                <div>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter Name"  required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" placeholder="Enter Email"  required>
+                    </div>
+                </div>
+                <div>
+                    <textarea name="suggestion" placeholder="Enter your suggestions here..."></textarea>
+                </div>
+                <div>
+                    <button type="reset" class="reset-btn">Reset</button>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </div>
         </form>
     </div>
     <!-- End -->
