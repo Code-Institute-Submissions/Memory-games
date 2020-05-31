@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Resolve Games</title>
+    <link rel="stylesheet" href="assets/css/simon.css">
+    <title>Resolve Games | Simon Game</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
@@ -32,41 +33,25 @@
     </header>
     <!-- End -->
 
-    <!-- Hero --> 
-    <div id="wrapper">
-        <div class="wrapper-text">
-            <h1>Resolve games</h1>
-            <h2>The fun of playing a game without having to pay</h2>   
-        </div>
-    </div>
-    <!-- End -->
-
-    <!-- Games Selection --> 
-    <div id ="games-selection">
-        <div class="game-card">
-            <a href="simon.html">
-                <div class="card-container">
-                    <img src="assets/images/simon-img.png" alt="Simon Game" class="card-image">
-                    <div class="overlay">
-                        <h3 class="text">Lets Play!</h3>
+    <!-- Game --> 
+    <div id="simon">
+        <div class="outer-circle">  
+            <div class="all-panels">
+                <div>
+                    <div onclick="panelClicked(event.currentTarget)" class="panel top-left-panel"></div>
+                    <div onclick="panelClicked(event.currentTarget)" class="panel top-right-panel"></div>
+                </div>      
+                <div class="center-circle">
+                    <div class="center-circle-text">
+                        <h3>Simon</h3>
+                        <button type="button" id="play-game">Start</button>
                     </div>
                 </div>
-            </a>
-            <h3 class="subheading">Simon Game</h3>
-            <p>A simple memory game. Waiting for the colors to flash and then repeating the pattern.</p>
-        </div>
-
-        <div class="game-card">
-            <a href="index.html">
-                <div class="card-container">
-                    <img src="assets/images/pairs-img.jpg" alt="Card Pairing Game" class="card-image">
-                    <div class="overlay">
-                        <h3 class="text">Lets Play!</h3>
-                    </div>
+                <div>
+                    <div onclick="panelClicked(event.currentTarget)" class="panel bottom-left-panel"></div>
+                    <div onclick="panelClicked(event.currentTarget)" class="panel bottom-right-panel"></div>
                 </div>
-            </a>
-            <h3 class="subheading">Match Two</h3>
-            <p>A simple memory game. Matching pairs of cards untill you've matched them all.</p>
+            </div>
         </div>
     </div>
     <!-- End -->
@@ -109,7 +94,7 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/sendEmail.js"></script>
     <script src="assets/js/header.js"></script>
-
+    <script src="assets/js/simon.js"></script>
 
     <!-- End -->
 </body>

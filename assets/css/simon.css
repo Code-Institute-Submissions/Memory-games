@@ -1,0 +1,80 @@
+/* All CSS For Simon Game ---------------------------------- */
+
+#simon {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F7F7F7;
+    padding: 100px 0;
+    text-align: center
+    
+}
+header {
+    background-color: #1c75bc;
+}
+.outer-circle {
+    width: 800px;
+    height: 800px;
+    border-radius: 100%;
+    background-color: black;
+    display: inline-block
+}
+.all-panels {
+    padding-top: 45px;
+    
+}
+.panel {
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    cursor: pointer;
+}
+.panel:hover {
+    box-shadow: inset 0px 0px 0px 3px black
+}
+.top-left-panel {
+    border-radius: 100% 0 0 0;
+    background-color: green
+}
+.top-right-panel {
+    border-radius: 0 100% 0 0;
+    background-color: red
+}
+.bottom-right-panel {
+    border-radius: 0 0 100% 0;
+    background-color: blue
+}
+.bottom-left-panel {
+    border-radius: 0 0 0 100%;
+    background-color: yellow
+}
+.center-circle {
+    width: 400px;
+    height: 400px;
+    top: 30%;
+    left: 40%;
+    border-radius: 100%;
+    background-color: black;
+    display: inline-block;
+    z-index: 1;
+    position: absolute;
+}
+.center-circle-text {
+    padding-top: 80px
+}
+.center-circle h3 {
+    font-size: 3em;
+    color: #fff
+}
+#play-game {
+    width: 100px;
+    padding: 1em;
+    border-radius: 4px
+}
+#play-game:hover {
+    background-color: #fff
+}
+
+
+.active {
+    background-color: #fff
+}
