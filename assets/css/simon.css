@@ -5,8 +5,7 @@
     height: 100vh;
     background-color: #F7F7F7;
     padding: 100px 0;
-    text-align: center
-    
+    text-align: center  
 }
 header {
     background-color: #1c75bc;
@@ -78,3 +77,100 @@ header {
 .active {
     background-color: #fff
 }
+
+/* Media Queries---------------------------------- */
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        margin: 0;
+        padding: 0;
+        overflow-X: hidden;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-X: hidden;
+    }
+    #simon {
+    padding-top: 175px;
+    padding-bottom: 0
+    }
+    .outer-circle {
+    width: 700px;
+    height: 700px;
+    }
+    .all-panels {
+    padding-top: 25px;
+    }
+    .panel {
+    width: 320px;
+    height: 320px;
+    }
+    .center-circle {
+    width: 300px;
+    height: 300px;
+    top: 36%;
+    left: 31%;
+    }
+    .center-circle-text {
+    padding-top: 60px
+    }
+    .center-circle h3 {
+    font-size: 2em;
+    }
+    #play-game {
+    width: 100px;
+    padding: 0.75em;
+    }
+}
+/*-----*/
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+    html {
+        margin: 0;
+        padding: 0;
+        overflow-X: hidden;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-X: hidden;
+    }
+    #simon {
+    padding-top: 175px;
+    padding-bottom: 0
+    }
+    .outer-circle {
+    width: 350px;
+    height: 350px;
+    }
+    .all-panels {
+    padding-top: 25px;
+    }
+    .panel {
+    width: 150px;
+    height: 150px;
+    }
+    .center-circle {
+    width: 175px;
+    height: 175px;
+    top: 40%;
+    left: 28%;
+    }
+    .center-circle-text {
+    padding-top: 15px
+    }
+    .center-circle h3 {
+    font-size: 1.5em;
+    }
+    #play-game {
+    width: 80px;
+    padding: 0.70em;
+    }
+}
+/*-----*/
+
+/* ---------------------------------- */
