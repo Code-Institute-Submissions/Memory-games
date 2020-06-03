@@ -1,0 +1,56 @@
+/* All CSS For Simon Game ---------------------------------- */
+
+#pairs {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F7F7F7;
+    padding: 100px 0;
+    text-align: center  
+}
+header {
+    background-color: #1c75bc;
+}
+
+
+/* Media Queries---------------------------------- */
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        margin: 0;
+        padding: 0;
+        overflow-X: hidden;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-X: hidden;
+    }
+    #simon {
+    padding-top: 175px;
+    padding-bottom: 0
+    }
+}
+/*-----*/
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+    html {
+        margin: 0;
+        padding: 0;
+        overflow-X: hidden;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-X: hidden;
+    }
+    #simon {
+    padding-top: 175px;
+    padding-bottom: 0
+    }
+}
+/*-----*/
+
+/* ---------------------------------- */

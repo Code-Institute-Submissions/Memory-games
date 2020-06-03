@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/pairs.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Resolve Games</title>
+    <title>Resolve Games | Pairs</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
@@ -24,23 +25,23 @@
             <span class="menu-icon-line"></span>      
         </label> 
         <ul class="nav-links">
-            <li class="nav-link"><a href="#">Home</a></li>
-            <li class="nav-link"><a href="#">Simon</a></li>
-            <li class="nav-link"><a href="#">Pairs</a></li>
-            <li class="nav-link"><a href="#">Contact</a></li>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="simon.html">Simon</a></li>
+            <li class="nav-link"><a href="pairs.html">Pairs</a></li>
+            <li class="nav-link"><a href="#form">Contact</a></li>
         </ul> 
     </header>
     <!-- End -->
 
     <!-- Game --> 
-    <div id="game">
+    <div id="pairs">
         
         
     </div>
     <!-- End -->
 
     <!-- Suggestions Form --> 
-    <div class="suggestions-form">
+    <div class="suggestions-form" id="form">
         <h2 class="subheading">Have an idea for another game we can add?</h2>
         <p>Send us your ideas and if we take your suggestion you will be credited in the game!</p>
         <form onsubmit="return sendMail(this);">
@@ -59,8 +60,8 @@
                     <textarea name="suggestion" placeholder="Enter your suggestions here..."></textarea>
                 </div>
                 <div>
-                    <button type="reset" class="reset-btn">Reset</button>
-                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="btn reset-btn">Reset</button>
+                    <button type="submit" class="btn submit-btn">Submit</button>
                 </div>
             </div>
         </form>

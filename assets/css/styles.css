@@ -266,12 +266,18 @@ input:focus, textarea:focus {
 .submit-btn:hover,
 .reset-btn:hover {
     background-color: #1c75bc;
-    box-shadow: 0px 5px #001221;
     opacity: 1;
+}
+/*.submit-btn:active,
+.reset-btn:active {
+    box-shadow: none
+}*/
+.btn {
+    box-shadow: 0px 5px #001221;
     cursor: pointer;
 }
-.submit-btn:active,
-.reset-btn:active {
+
+.btn:active {
     box-shadow: none
 }
 

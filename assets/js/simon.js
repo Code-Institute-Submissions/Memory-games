@@ -3,6 +3,7 @@ const topRight = document.querySelector('.top-right-panel');
 const bottomRight = document.querySelector('.bottom-right-panel');
 const bottomLeft = document.querySelector('.bottom-left-panel');
 
+const turnCounter = document.querySelector('#counter');
 const startButton = document.querySelector('#start');
 
 const getRandomPanel = () => {
@@ -30,6 +31,7 @@ const flash = panel => {
 
 let canClick = false;
 
+
 const panelClicked = panelClicked => {
     if(!canClick) return;
     const expectedPanel = sequenceToGuess.shift();
@@ -45,7 +47,6 @@ const panelClicked = panelClicked => {
         alert('GAME OVER!')
     }
 }
-
 const startFlashing = async () => {
     canClick = false;
     for (const panel of sequence) {
@@ -55,10 +56,7 @@ const startFlashing = async () => {
 };
 
 
-
 startButton.addEventListener('click', (event) => {
         startFlashing();
     })
 
-
-//startFlashing();
