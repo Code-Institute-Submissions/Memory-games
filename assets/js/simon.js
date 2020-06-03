@@ -3,7 +3,7 @@ const topRight = document.querySelector('.top-right-panel');
 const bottomRight = document.querySelector('.bottom-right-panel');
 const bottomLeft = document.querySelector('.bottom-left-panel');
 
-
+const startButton = document.querySelector('#start');
 
 const getRandomPanel = () => {
     const panels = [topLeft, topRight, bottomRight, bottomLeft]
@@ -52,6 +52,13 @@ const startFlashing = async () => {
         await flash(panel);
     };
     canClick = true;
-}
+};
 
-startFlashing();
+
+
+startButton.addEventListener('click', (event) => {
+        startFlashing();
+    })
+
+
+//startFlashing();

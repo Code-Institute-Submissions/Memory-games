@@ -259,18 +259,32 @@ input:focus, textarea:focus {
 .submit-btn {
     margin-top: 10px;
 }
-.submit-btn:hover,
-.reset-btn:hover {
-    background-color: #1c75bc;
-    opacity: 1;
-    cursor: pointer;
-}
 .reset-btn {
     background-color: #1c75bc;
     opacity: 0.6;
 }
-/* ---------------------------------- */
+.submit-btn:hover,
+.reset-btn:hover {
+    background-color: #1c75bc;
+    box-shadow: 0px 5px #001221;
+    opacity: 1;
+    cursor: pointer;
+}
+.submit-btn:active,
+.reset-btn:active {
+    box-shadow: none
+}
 
+/* ---------------------------------- */
+.back-to-top {
+    text-align: center
+}
+.back-to-top a {
+    text-decoration: underline;
+    color: #1c75bc;
+    text-align: center;
+    cursor: pointer;
+}
 /* Footer ---------------------------------- */
 footer {
     width: 100%;
