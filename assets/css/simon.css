@@ -58,7 +58,7 @@ header {
     position: absolute;
 }
 .center-circle-text {
-    padding-top: 80px
+    margin-top: 120px
 }
 .center-circle h3 {
     font-size: 3em;
@@ -114,7 +114,7 @@ header {
     left: 31%;
     }
     .center-circle-text {
-    padding-top: 60px
+    margin-top: 100px
     }
     .center-circle h3 {
     font-size: 2em;
@@ -161,12 +161,12 @@ header {
     left: 28%;
     }
     .center-circle-text {
-    padding-top: 15px
+    margin-top: 40px
     }
     .center-circle h3 {
     font-size: 1.5em;
     }
-    #play-game {
+    #start {
     width: 80px;
     padding: 0.70em;
     }
