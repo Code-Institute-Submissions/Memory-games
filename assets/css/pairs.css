@@ -1,4 +1,7 @@
-/* All CSS For Simon Game ---------------------------------- */
+/* All CSS For Pairs Game ---------------------------------- */
+header {
+    background-color: #1c75bc;
+}
 
 #pairs {
     width: 100vw;
@@ -7,9 +10,56 @@
     padding: 100px 0;
     text-align: center  
 }
-header {
-    background-color: #1c75bc;
+
+.row {
+
 }
+.card {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    /*background-color: #eee;*/
+    cursor: pointer;
+    border-radius: 5px
+}
+.card:hover {
+    box-shadow: inset 0px 0px 0px 3px #333
+}
+.blue {
+    background-color: blue
+}
+.red {
+    background-color: red
+}
+.green {
+    background-color: green
+}
+.purple {
+    background-color: purple
+}
+.black {
+    background-color: black
+}
+.orange {
+    background-color: orange
+}
+.yellow {
+    background-color: yellow
+}
+.pink {
+    background-color: pink
+}
+.color-hidden {
+    background-color: #eee
+}
+.sample {
+    cursor: default;
+    transition: .5s
+}
+.sample:hover {
+    box-shadow: none
+}
+
 
 
 /* Media Queries---------------------------------- */
