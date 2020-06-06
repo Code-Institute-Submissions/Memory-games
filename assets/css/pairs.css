@@ -50,7 +50,9 @@ header {
     background-color: pink
 }
 .color-hidden {
-    background-color: #eee
+    background-color: #eee;
+    cursor: pointer;
+    transition: .5s
 }
 .sample {
     cursor: default;
