@@ -40,6 +40,7 @@ const panelClicked = panelClicked => {
             //Start New Round
             sequence.push(getRandomPanel());
             sequenceToGuess = [...sequence];
+            counter();
             startFlashing();
         }
     } else {
@@ -55,8 +56,35 @@ const startFlashing = async () => {
     canClick = true;
 };
 
+function counter() {
+    turn = getRandomPanel.length
+    turn ++
+    turnCounter.innerHTML = turn+1;
+}
 
+//Start Game
 startButton.addEventListener('click', (event) => {
         startFlashing();
-    })
+        turnCounter.innerHTML = 1
+});
+//Click Each Panel
+topLeft.addEventListener('click', (event) => {
+    panelClicked(event.currentTarget)
 
+}); 
+topRight.addEventListener('click', (event) => {
+    panelClicked(event.currentTarget)
+     
+});
+bottomRight.addEventListener('click', (event) => {
+    panelClicked(event.currentTarget)
+      
+});
+bottomLeft.addEventListener('click', (event) => {
+    panelClicked(event.currentTarget)
+    
+});
+
+//issues
+//should panel clicked by player flash on click
+//counter not incrementing correctly

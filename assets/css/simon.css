@@ -18,8 +18,7 @@ header {
     display: inline-block
 }
 .all-panels {
-    padding-top: 45px;
-    
+    padding-top: 45px;  
 }
 .panel {
     width: 350px;

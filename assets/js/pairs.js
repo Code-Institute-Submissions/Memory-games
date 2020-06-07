@@ -1,12 +1,14 @@
-const cards = document.querySelectorAll('.card');
-
 let hasCardFlipped = false;
-let lockBoard = false;
 let firstCard, secondCard;
+let lockBoard = false;
+let combosFound = 0;
+
+const cards = document.querySelectorAll('.card');
 
 //When card is clicked, card color appears
 function onCardClicked() {
     if (lockBoard) return;
+
     if(this === firstCard) return;
     this.classList.replace('color-hidden', 'sample'); //change .replace to .toggle and remove '.'
 
@@ -28,6 +30,7 @@ function checkForMatch() {
     if (firstCard.dataset.color === secondCard.dataset.color) {
         firstCard.removeEventListener('click', onCardClicked);
         secondCard.removeEventListener('click', onCardClicked);
+        preventClick = false;
     } else {
     //If cards DON'T match
     lockBoard = true;
@@ -38,16 +41,20 @@ function checkForMatch() {
             secondCard.classList.remove('sample');
             lockBoard = false;
         }, 500);
-    }      
+    } win();
 }
 
-//function playAgain {
-    //if
-//}
+function win() {
+    combosFound ++;
+    if (combosFound === 8) {
+        alert('CONGRATULATIONS | YOU WIN');
+        const playAgain = document.querySelector('.btn')
+        this.classList.replace('play-again', '')
+    }
+}
 
 cards.forEach(card => card.addEventListener('click', onCardClicked))
 
-
-
-
-
+//issues
+//combosFound win function not working correcly
+//only way to restart game is to refresh page (ONLY FIX IS NECESSARY)

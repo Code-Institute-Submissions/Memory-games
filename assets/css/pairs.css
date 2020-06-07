@@ -2,7 +2,6 @@
 header {
     background-color: #1c75bc;
 }
-
 #pairs {
     width: 100vw;
     height: 100vh;
@@ -10,15 +9,10 @@ header {
     padding: 100px 0;
     text-align: center  
 }
-
-.row {
-
-}
 .card {
     display: inline-block;
     width: 200px;
     height: 200px;
-    /*background-color: #eee;*/
     cursor: pointer;
     border-radius: 5px
 }
@@ -61,8 +55,6 @@ header {
 .sample:hover {
     box-shadow: none
 }
-
-
 
 /* Media Queries---------------------------------- */
 /*Tablet*/
