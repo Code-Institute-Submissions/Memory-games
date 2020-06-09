@@ -70,9 +70,21 @@ header {
         width: 100%;
         overflow-X: hidden;
     }
-    #simon {
-    padding-top: 175px;
-    padding-bottom: 0
+    #pairs {
+    padding: 0 
+    }
+    .row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+        padding-bottom: 5px
+    }
+    .row:first-child {
+        padding-top: 170px
+    }
+    .card {
+        width: 100%;
+        height: 175px;
     }
 }
 /*-----*/
@@ -90,9 +102,21 @@ header {
         width: 100%;
         overflow-X: hidden;
     }
-    #simon {
-    padding-top: 175px;
-    padding-bottom: 0
+    #pairs {
+        padding: 0
+    }
+    .row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+        padding-bottom: 10px
+    }
+    .row:first-child {
+        padding-top: 140px
+    }
+    .card {
+        width: 100%;
+        height: 100px;
     }
 }
 /*-----*/
