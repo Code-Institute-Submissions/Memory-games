@@ -19,12 +19,9 @@ The website has 3 main pages, 'Home'(the landing page), 'Simon Game' and 'Pairs 
     - #### Returning Visitor Goals
         1. As a Returning Visitor, I want to play the games again and attempt to beat my previous scores.
         2. Also, I want to easily send suggestions for new games and/or updates that can be added.
-        3. Also, I want the ability to Interact with other players to keep track of high scores.
 
     - #### Frequent User Goals
         1. As a Frequent User, I want to check to see if there are any newly added features and games.
-        2. Also, I want to check to see If theres any new high scores.
-        3. Also, I want to sign up to a newsletter where I can be alerted when something new Is added.
 
 - ### Design
     - #### Colour Scheme
@@ -54,4 +51,80 @@ The website has 3 main pages, 'Home'(the landing page), 'Simon Game' and 'Pairs 
         execution of the landing page. I took extra measures when searching for images so they would maintain the correct aspect ration without having to alter
         them too drastically with hard code which can sometimes ruin the quality of an image. I also focussed on obtaining images which would best suit there
         place on the website and work well with the color scheme.
-    
+
+## Features
+
+**Note:** All Features Information can be located in seperate [FEATURES.MD File](..link..) due to length of content.
+
+## Technologies Used
+
+- ### Languages Used
+    - [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+    - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+- ### Programs Used
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Oswald' font into the 'styles.css' file which is used on all pages throughout the project.
+2. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+3. [Gitpod:](https://www.gitpod.io/)
+    - Gitpod was the primary IDE used throughout the entirety of the project. 
+4. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+    - The website is also deployed using GitHub Pages.
+5. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
+    - Photoshop was used for resizing images and editing photos to better suit the website. 
+6. [Web Formatter](https://webformatter.com/)
+    - Web Formatter was used on all HTML, CSS and JS to beautify code to keep it neat and easy to read. 
+    This can also be done by utilising Beautify Cmd (Shift + Alt + F) in GitPod.
+
+## Testing
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+- [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](...link...)
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](...link...)
+
+### Testing User Stories from User Experience (UX) Section
+
+- #### First Time Visitor Goals
+    As a First Time Visitor...
+    1. I want to easily understand the main purpose of the site.
+        1. Upon entering, you are greated with an informative hero image which described the goal of the site and a clear, easy to read navigation bar.
+        2. As the hero image only takes up 50 percent of the viewport height the user will still be able to see the game selection area which would intise them to look at.
+        3. The user can see exactly what the purpose of the site is without having to scroll down the page leaving them with the biggest question... "Which game should I play first".
+
+    2. I want striking imagery to help visually represent each section.
+        1. As stated before, the landing page hosts the main hero image which instantly informs the user what the site is for.
+        2. Each game also has its own hero image which, on click, links the user from the landing page, to that particular game.
+        3. All images are fully responsive and have been alterd to look good on any device size.
+
+    3. I want to be able to easily navigate throughout the site on any device to find content.
+        1. The site has been designed to never to entrap the user. The navigation bar moves freely as the user scrolls up and down the page and triggers a JavaScript effect which adds a background to the header to avoid being unable to read the links. 
+        2. At the bottom of each page, there is a 'Back To Top' bottom to further ensure the user never gets trapped.
+        3. On the Suggestions Form, after a form response is submitted, the 'Send' button changes to 'Sent' to verify to the user there message has been sent.
+
+- #### Returning Visitor Goals
+    As a Returning Visitor...
+    1. I want to play the games again and attempt to beat my previous scores.
+        1. The simon game will run an infinite amount of rounds untill the user clicks the wrong button. For each correct click, there is a turn counter in the center which will update and show how many correct buttons have been pressed in a row.
+        2. For the pairs game, the user could time themselves and keep track of that to give themselves something to improve on.
+
+    2. I want to easily send suggestions for new games and/or updates that can be added.
+        1. The navigation bar clearly highlights the "Contact" section which will automatically scroll the user down to that section.
+        2. Here they can fill out the form on any of the pages and you won't be transferred to somewhere else.
+        3. A form section is on each page and for the games, the form can be found direcly below them so the user wont be led away. 
+
+- #### Frequent User Goals
+    As a Frequent User...
+    1. I want to check to see if there are any newly added features and games.
+        1. The landing page will always be the host for game selection. As new games and features are added they will be showcased there.
+
+### Further Testing
+- The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers. 
+- The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy S10, iPhone 6s & iPhoneX.
+- A large amount of testing was done to ensure that everything rendered and linked correctly on all browsers and a wide variey of devices. 
+- Friends and Family members were asked to review the site and report feeback on any bugs and/or user experience issues/negative experiences.
+
+### Known Bugs
+- NOT DOCUMENTED YET
