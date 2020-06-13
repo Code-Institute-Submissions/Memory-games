@@ -128,3 +128,32 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 - NOT DOCUMENTED YET
+
+## Deployment
+
+### GitHub Pages
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/joenapper/Memory-games)
+2. At the top of the Repository (not top of page), locate the "Settings" Button, located far right, on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](LIVE-Deployment-LINK) in the "GitHub Pages" section.
+
+## Credits
+
+### Content
+- The website was entirely designed and developed by Joe Napper
+
+- All content (except for images) were created by the above developer.
+
+### Media
+- [Google Images](https://www.google.com/imghp?hl=en): All the hero and product Images were obtained from Google Images.
+
+- Some of the Images were edited by the Developer using Photoshop.
+    - Some of images didnt fit correctly and using hard code to correct this caused images to go blury. This was fixed using the crop tool and sharpness filter in Photoshop.
+    
+### Acknowledgements
+
+- My Mentor Mark Railton for continuous helpful feedback and ideas to improve both myself as a developer and my project.
