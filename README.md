@@ -80,6 +80,8 @@ The website has 3 main pages, 'Home'(the landing page), 'Simon Game' and 'Pairs 
         This can also be done by utilizing Beautify Cmd (Shift + Alt + F) in GitPod.
     7. [Grammarly:](https://app.grammarly.com/)
         - Grammarly was used on every page on the site as-well-as the 'README.md', and 'FEATURES.md' to correct any spelling/grammar mistakes. 
+    8. [Jasmine:](https://jasmine.github.io/)
+        - Jasmine was used to test the JavaScript before Implementing It into the website.
 
 ## Testing
 
@@ -87,7 +89,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     - [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](...link...)
     - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](...link...)
 
-### Testing User Stories from User Experience (UX) Section
+- ### Testing User Stories from User Experience (UX) Section
 
 - #### First Time Visitor Goals
     As a First Time Visitor...
@@ -122,19 +124,20 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     1. I want to check to see if there are any newly added features and games.
         1. The landing page will always be the host for game selection. As new games and features are added, they will be showcased there.
 
-### Further Testing
+- ### Further Testing
     - The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, and Safari browsers. 
     - The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy S10, iPhone 6s & iPhone X.
-    - A large amount of testing was done to ensure that everything rendered and linked correctly on all browsers and a wide variety of devices. 
+    - A large amount of testing was done to ensure that everything rendered and linked correctly on all browsers and a wide variety of devices.
+    - All games JavaScript code was tested in a separate document using Jasmine. 
     - Friends and Family members were asked to review the site and report feedback on any bugs and/or user experience issues/negative experiences.
 
-### Known Bugs
+- ### Known Bugs
     - NOT DOCUMENTED YET
 
 ## Deployment
 
-### GitHub Pages
-    The project was deployed to GitHub Pages using the following steps...
+- ### GitHub Pages
+    - The project was deployed to GitHub Pages using the following steps...
 
         1. Log in to GitHub and locate the [GitHub Repository](https://github.com/joenapper/Memory-games)
         2. At the top of the Repository (not top of page), locate the "Settings" Button, located far right, on the menu.
@@ -145,15 +148,15 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Credits
 
-    - ### Content
-        - The website was entirely designed and developed by Joe Napper
+- ### Content
+    - The website was entirely designed and developed by Joe Napper
 
-        - All content (except for images) was created by the above developer.
+    - All content (except for images) was created by the above developer.
 
-    - ### Media
-        - [Google Images](https://www.google.com/imghp?hl=en): All the hero and product Images were obtained from Google Images.
-        - Some of these Images had to be edited using Photoshop.
-            - Some of the Images didn't fit correctly and using hard code to correct this caused Images to go blurry. This was fixed using the crop tool and sharpness filter in Photoshop.
+- ### Media
+    - [Google Images](https://www.google.com/imghp?hl=en): All the hero and product Images were obtained from Google Images.
+    - Some of these Images had to be edited using Photoshop.
+        - Some of the Images didn't fit correctly and using hard code to correct this caused Images to go blurry. This was fixed using the crop tool and sharpness filter in Photoshop.
     
-    - ### Acknowledgements
-        - My Mentor Mark Railton for continuous helpful feedback and ideas to improve both myself as a developer and my project.
+- ### Acknowledgements
+    - My Mentor Mark Railton for continuous helpful feedback and ideas to improve both myself as a developer and my project.
