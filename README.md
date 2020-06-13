@@ -54,7 +54,7 @@ The website has 3 main pages, 'Home'(the landing page), 'Simon Game' and 'Pairs 
 
 ## Features
 
-**Note:** All Features Information can be located in the separate [FEATURES.md File](..link..) due to the length of content.
+**Note:** All Features Information can be located in the separate [FEATURES.md](https://github.com/joenapper/Memory-games/blob/master/FEATURES.md), due to the length of content.
 
 ## Technologies Used
 
