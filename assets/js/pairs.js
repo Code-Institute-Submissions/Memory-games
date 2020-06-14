@@ -6,6 +6,8 @@ let firstCard, secondCard;
 
 function cardClicked() {
     if (lockBoard) return;
+    if (this === firstCard) return;
+
     this.classList.remove('color-hidden');
 
     if (!isCardClicked) {
@@ -39,11 +41,19 @@ function disableCards() {
 
 function enableCards() {
     lockBoard = true;
+
     setTimeout(() => {
         firstCard.classList.add('color-hidden');
         secondCard.classList.add('color-hidden');
         lockBoard = false;
+
+        resetBoard()
     }, 600);
 };
+
+function resetBoard() {;
+    [cardClicked, lockBoard] = [false, false]
+    [firstCard, secondCard] = [null, null];
+}
 
 cards.forEach(card => card.addEventListener('click', cardClicked));
