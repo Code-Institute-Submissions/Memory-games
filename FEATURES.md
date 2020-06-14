@@ -6,7 +6,7 @@
 
 ## Features
 
-### Site Wide
+- ### Site Wide
 
     - The site is made up of 3 pages, "Home"(the landing page), "Simon Game", and "Pairs Game".
     All pages have 3 main components in common. A navigation bar, suggestions form, and a footer,
