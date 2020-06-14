@@ -3,16 +3,19 @@ header {
     background-color: #1c75bc;
 }
 #pairs {
-    width: 100vw;
-    height: 100vh;
+    width: 50vw;
+    height: 85vh;
     background-color: #F7F7F7;
-    padding: 100px 0;
-    text-align: center  
+    padding: 100px 25%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap  
 }
 .card {
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 24%;
+    margin: 0 0.5%;
+    height: 24%;
     cursor: pointer;
     border-radius: 5px
 }
@@ -71,20 +74,9 @@ header {
         overflow-X: hidden;
     }
     #pairs {
-    padding: 0 
-    }
-    .row {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 5px;
-        padding-bottom: 5px
-    }
-    .row:first-child {
-        padding-top: 170px
-    }
-    .card {
-        width: 100%;
-        height: 175px;
+        width: 80vw;
+        height: 70vh;
+        padding: 160px 10%; 
     }
 }
 /*-----*/
@@ -103,20 +95,9 @@ header {
         overflow-X: hidden;
     }
     #pairs {
-        padding: 0
-    }
-    .row {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 5px;
-        padding-bottom: 10px
-    }
-    .row:first-child {
-        padding-top: 140px
-    }
-    .card {
-        width: 100%;
-        height: 100px;
+        width: 80vw;
+        height: 65vh;
+        padding: 140px 10%
     }
 }
 /*-----*/
