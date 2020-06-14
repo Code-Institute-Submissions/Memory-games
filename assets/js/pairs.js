@@ -1,9 +1,11 @@
 const cards = document.querySelectorAll('.card');
 
 let isCardClicked = false;
+let lockBoard = false;
 let firstCard, secondCard;
 
 function cardClicked() {
+    if (lockBoard) return;
     this.classList.remove('color-hidden');
 
     if (!isCardClicked) {
@@ -36,9 +38,11 @@ function disableCards() {
 };
 
 function enableCards() {
+    lockBoard = true;
     setTimeout(() => {
         firstCard.classList.add('color-hidden');
         secondCard.classList.add('color-hidden');
+        lockBoard = false;
     }, 600);
 };
 
