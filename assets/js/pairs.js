@@ -7,26 +7,39 @@ function cardClicked() {
     this.classList.remove('color-hidden');
 
     if (!isCardClicked) {
-        //first card
+        // First card
         isCardClicked = true;
         firstCard = this;
-    } else {
-        //second card
-        isCardClicked = false;
-        secondCard = this
-        //do cards match?
-        if (firstCard.dataset.color === secondCard.dataset.color) {
-            //match
-            firstCard.removeEventListener('click', cardClicked);//here for on hover 
-            secondCard.removeEventListener('click', cardClicked);
-        } else {
-            //no match
-            setTimeout(() => {
-                firstCard.classList.add('color-hidden');
-                secondCard.classList.add('color-hidden');
-            }, 600)
-        };
+
+        return;
     };
+    // Second card
+    isCardClicked = false;
+    secondCard = this;
+        
+    checkForMatch();
+};
+
+function checkForMatch() {
+        if (firstCard.dataset.color === secondCard.dataset.color) {
+            // Match
+            disableCards()
+        } else {
+            // No match
+            enableCards()
+        };
+};
+
+function disableCards() {
+    firstCard.removeEventListener('click', cardClicked);
+    secondCard.removeEventListener('click', cardClicked);
+};
+
+function enableCards() {
+    setTimeout(() => {
+        firstCard.classList.add('color-hidden');
+        secondCard.classList.add('color-hidden');
+    }, 600);
 };
 
 cards.forEach(card => card.addEventListener('click', cardClicked));
