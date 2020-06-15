@@ -107,15 +107,14 @@ body {
 .nav-link:hover ul {
     display: block
 }
-.nav-link a::after {
+/*.nav-link a::after {
     content:'';
     display: block;
     width: 0;
     height: 2px;
-    /*background: #1c75bc;*/
     background-color: #fff;
     transition: width .4s
-}
+}*/
 .nav-link a:hover::after {
     width: 100%;
     transition: .4s;
@@ -305,6 +304,18 @@ footer p {
 /* ---------------------------------- */
 
 /* Media Queries---------------------------------- */
+/*Desktop*/
+@media (min-width: 1024px) {
+    .nav-link a::after {
+    content:'';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width .4s
+    }
+}
+
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 1024px) {
     html {
@@ -399,10 +410,10 @@ footer p {
         text-align: center;
         padding: 0
     }
-    .nav-link a {
+    /*.nav-link a {
         display: block;
         padding: 2rem 0
-    }
+    }*/
     .menu-btn:checked ~ .nav-links {
         opacity: 1;
         clip-path: circle(100% at center)

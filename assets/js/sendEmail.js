@@ -24,13 +24,14 @@ const submitButton = document.querySelector('.submit-btn');
 
 submitButton.addEventListener('click', clearForm);
 function clearForm() {
-    nameClear.value = '';
-    emailClear.value = '';
-    textareaClear.value = '';
-    submitButton.textContent = 'SENT';
+    setTimeout(() => {
+        nameClear.value = '';
+        emailClear.value = '';
+        textareaClear.value = '';
+        submitButton.textContent = 'SENT';
+    }, 300);
 };
 
 // BUGS: SUBMIT button needs to be changed so it will only change to SENT after information is inputted 
-// BUGS: Information wont send properly with the clearForm function  
 
 
