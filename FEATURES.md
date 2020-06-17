@@ -75,9 +75,12 @@
     Each side is laid out the same. We see an Image of that particular game, which tells the user what game it is about before reading
     the text, followed by the title (i.e Simon Game) and a short description of what the game is about.
 
-    - As the screen size gets smaller (tablet and mobile devices), the layout doesn't change as the design still looks good. This section is 
-    also completely responsive and each column adjusts to suit the screen size. The text size changes slightly depending on the screen size
-    to keep everything looking proportionate. 
+    - For tablet, the layout doesn't change as the design still looks good. This section is 
+    also completely responsive and each column adjusts to suit the screen size. The text size changes slightly depending on the display
+    to keep everything looking proportionate.
+
+    - On mobile, the two games to be selected appear one on top of the other as opposed to side by side, to be much easier to read and
+    more visually pleasing. 
 
 ### Simon Game
 
@@ -96,7 +99,14 @@
     - Additional testing was done on the playability of this game to ensure the panels could still be clicked on smaller screens.  
 
 - ##### Functionality
-    - ?
+    - The basic functionality of Simon is simple...
+        1. Click the start button.
+        2. Wait for the game to flash a sequence.
+        3. Repeat that sequence back to the game.
+
+        - If the sequence Is clicked correctly, the game counter will Increase (telling the user they guessed correctly) and the next
+        sequence will begin.
+        - If the sequence Is clicked Incorrectly, an alert will appear saying 'GAME OVER!' and the sequences will stop. 
 
 ### Pairs Game
 
@@ -113,7 +123,12 @@
     - On the tablet and mobile views, I managed to keep the 4x4 grid layout by altering the card sizes and Implementing 'CSS Grid'. 
 
 - ##### Functionality
-    - ?
+    - The basic functionality of Pairs is simple...
+        1. Click on two cards In hope of picking two of the same color.
+        2. Match all 8 pairs.
+        
+        - If the two cards don't match, they will simply flip back over and the player can try again.
+        - If they do match, the cards will remain face up and allow the player to keep going. 
 
 
 
