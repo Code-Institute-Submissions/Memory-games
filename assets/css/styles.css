@@ -24,100 +24,119 @@ body {
 /* ---------------------------------- */
 
 /* Header ---------------------------------- */
-.main-header {
+header {
+    width: 80%;
+    padding: 0 10%;
     position: fixed;
+    z-index: 2;
+}
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 65px;
-    width: 80%;
-    padding: 0 10%;
-    color: #fff;
-    z-index: 2;
-    transition: .4s ease-out;
-    font-family: Oswald, sans-serif
-}
-.logo {
-    font-size: 1.5em
-}
-.main-header a {
-    text-decoration: none;
-    color: inherit;
+    height: 8vh;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
-    font-size: 1.2em
-}
-.menu-icon {
-    background: #fff
-}
-.scrolled {
-    height: 50px;
-    background-color: rgba(28, 117, 188, 0.9);
     color: #fff;
+}
+.logo { 
+    letter-spacing: 5px;
+    font-size: 1.2em;
 }
 .nav-links {
     display: flex;
+    justify-content: space-around;
+}
+.nav-links li {
     list-style: none;
+    padding-left: 3em;
 }
-
-.nav-link {
-    padding-left: 1em
+.nav-links a {
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 1.1em;
+    text-decoration: none;
 }
-
-.nav-link a {
-    font-family: 'Times New Roman', Times, serif
-}
-.nav-link a:hover {
-    background: rgb(255,255,255,0.2)
-}
-.menu-icon {
-    position: relative;
-    padding: 26px 10px;
-    cursor: pointer;
-    z-index: 1;
+.burger {
     display: none;
+    cursor: pointer;
 }
-.menu-icon-line {
-    display: block;
-    position: relative;
-    background: #fff;
-    height: 2px;
-    width: 20px;
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
     border-radius: 4px;
-    transition: background .8s ease;
+    transition: all 1s ease;
 }
-.menu-icon-line::before, 
-.menu-icon-line::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 4px;
-    background: #fff;
-    transition: background .8s ease;
-}
-.menu-icon-line::before {
-    transform: translateY(-5px)
-}
-.menu-icon-line::after {
-    transform: translateY(5px)
-}
-.menu-btn {
-    display: none
-}
-.nav-link:hover ul {
-    display: block
-}
-/*.nav-link a::after {
+.nav-links a::after {
     content:'';
     display: block;
     width: 0;
     height: 2px;
     background-color: #fff;
     transition: width .4s
-}*/
-.nav-link a:hover::after {
+}
+.nav-links a:hover::after {
     width: 100%;
     transition: .4s;
+}
+.scrolled {
+    min-height: 6vh;
+    background-color: rgba(28, 117, 188, 0.9);
+    color: #fff;
+    transition: .5s ease
+}
+/*Navbar Hamburger Menu*/
+@media screen and (max-width:768px) {
+    .nav-links {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(28, 117, 188, 0.9);
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        overflow-x: hidden;
+    }
+    .nav-links li {
+        padding: 0;
+        opacity: 0;
+    }
+    .nav-links a::after {
+        display: none
+    }
+    .burger {
+        display: block;
+    }
+}
+.nav-active {
+    transform: translateX(0);
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.burger-toggle .top-line {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.burger-toggle .mid-line {
+    opacity: 0;
+}
+.burger-toggle .btm-line {
+    transform: rotate(45deg) translate(-5px,-6px);
 }
 /* ---------------------------------- */
 
@@ -167,6 +186,8 @@ body {
 }
 .card-image {
   display: block;
+  position: relative;
+  z-index: -1;
   width: 100%;
   height: 300px;
 }
@@ -304,17 +325,6 @@ footer p {
 /* ---------------------------------- */
 
 /* Media Queries---------------------------------- */
-/*Desktop*/
-@media (min-width: 1024px) {
-    .nav-link a::after {
-    content:'';
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: #fff;
-    transition: width .4s
-    }
-}
 
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -328,6 +338,9 @@ footer p {
         padding: 0;
         width: 100%;
         overflow-X: hidden;
+    }
+    .nav-links a {
+        font-size: 1.4em;
     }
     .wrapper-text h1{
         font-size: 2.5em
@@ -352,146 +365,17 @@ footer p {
 
 /*Mobile*/
 @media screen and (max-width: 767px) {
-    html {
+    html,
+    body {
         margin: 0;
         padding: 0;
         overflow-X: hidden;
     }
     body {
-        margin: 0;
-        padding: 0;
         width: 100%;
-        overflow-X: hidden;
     }
-    .main-header {
-        margin: 0;
-        padding: 0;
-        width: 80%;
-        padding: 0 10%;
-    }
-    .menu-icon {
-        display: block;
-        background-color: transparent
-    }
-    .menu-icon-line {
-        animation: closedMid 0.8s backwards;
-        animation-direction: reverse
-    }
-    .menu-icon-line::before {
-        animation: closedTop 0.8s backwards;
-        animation-direction: reverse
-    }
-    .menu-icon-line:after {
-        animation: closedBottom 0.8s backwards;
-        animation-direction: reverse
-    }
-    .nav-links {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        width: 100vw;
-        height: 100vh;
-        font-size: 2rem;
-        color: #fff;
-        /*background: #272727;*/
-        background-color: rgba(128,128,128,0.9);
-        transition: opacity .8s .5s, clip-path 1s .5s;
-        clip-path: circle(200px at top right)
-    }
-    .nav-link {
-        opacity: 1;
-        width: 100%;
-        text-align: center;
-        padding: 0
-    }
-    /*.nav-link a {
-        display: block;
-        padding: 2rem 0
-    }*/
-    .menu-btn:checked ~ .nav-links {
-        opacity: 1;
-        clip-path: circle(100% at center)
-    }
-    .menu-btn:checked ~ .menu-icon {
-        border-radius: 50%;
-    }
-    .menu-btn:checked ~* .menu-icon-line {
-        background: red;
-        animation: openMid 0.8s forwards
-    }
-    .menu-btn:checked ~* .menu-icon-line::before {
-        background: red;
-        animation: openTop 0.8s forwards
-    }
-    .menu-btn:checked ~* .menu-icon-line:after {
-        background: red;
-        animation: openBottom 0.8s forwards
-    }
-    @keyframes openTop {
-        0%{
-            transform: translateY(-5px) rotate(0deg)
-        }
-        50%{
-            transform: translateY(0px) rotate(0deg)
-        }
-        100%{
-            transform: translateY(0px) rotate(90deg)
-        }
-    }
-    @keyframes openMid {
-        50%{
-            transform: rotate(0deg)
-        }
-        100%{
-            transform: rotate(45deg)
-        }
-    }
-    @keyframes openBottom {
-        0%{
-            transform: translateY(5px) rotate(0deg)
-        }
-        50%{
-            transform: translateY(0px) rotate(0deg)
-        }
-        100%{
-            transform: translateY(0px) rotate(90deg)
-        }
-    }
-    @keyframes closedTop {
-        0%{
-            transform: translateY(-5px) rotate(0deg)
-        }
-        50%{
-            transform: translateY(0px) rotate(0deg)
-        }
-        100%{
-            transform: translateY(0px) rotate(90deg)
-        }
-    }
-    @keyframes closedMid {
-        50%{
-            transform: rotate(0deg)
-        }
-        100%{
-            transform: rotate(45deg)
-        }
-    }
-    @keyframes closedBottom {
-        0%{
-            transform: translateY(5px) rotate(0deg)
-        }
-        50%{
-            transform: translateY(0px) rotate(0deg)
-        }
-        100%{
-            transform: translateY(0px) rotate(90deg)
-        }
+    .logo h1 {
+        font-size: 1em
     }
     .wrapper-text {
         padding-top: 120px;
