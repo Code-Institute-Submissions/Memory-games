@@ -25,8 +25,8 @@ body {
 
 /* Header ---------------------------------- */
 header {
-    width: 80%;
-    padding: 0 10%;
+    width: 70%;
+    padding: 0 15%;
     position: fixed;
     z-index: 2;
 }
@@ -42,6 +42,10 @@ nav {
 .logo { 
     letter-spacing: 5px;
     font-size: 1.2em;
+}
+.logo a {
+    text-decoration: none;
+    color: inherit
 }
 .nav-links {
     display: flex;
@@ -167,16 +171,15 @@ nav {
 
 /* Contents Section ---------------------------------- */
 #games-selection {
-    width: 80%;
-    padding: 150px 10%;
+    width: 70%;
+    padding: 150px 15%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     text-align: center;
     justify-content: center
 }
 .game-card {
-    width: 60%;
-    margin: 0 20%;
+    width: 100%;
     cursor: pointer;
 }
 .card-container {
@@ -185,7 +188,8 @@ nav {
 }
 .card-image {
   display: block;
-  width: 100%;
+  width: 60%;
+  padding: 0 20%;
   height: 400;
 }
 .overlay {
@@ -193,10 +197,10 @@ nav {
   bottom: 0;
   left: 0;
   right: 0;
-  /*background-color: rgba(255, 255, 255, 0.8);*/
   background-color: rgba(28, 117, 188, 0.2);
   overflow: hidden;
   width: 100%;
+  border-radius: 12rem 12rem 3rem 3rem;
   height: 0;
   transition: .5s ease;
 }
@@ -205,11 +209,13 @@ nav {
 }
 .overlay-text {
   white-space: nowrap; 
-  color: #1c75bc;
-  font-size: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+  font-size: 4rem;
+  text-transform: uppercase;
   position: absolute;
   overflow: hidden;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -217,7 +223,7 @@ nav {
 .game-card p,
 .game-card a {
     color: black;
-    text-decoration: none
+    text-decoration: none;
 }
 /* ---------------------------------- */
 
@@ -238,7 +244,7 @@ form {
     width: 100%
 }
 input {
-    width: 80%;
+    width: 90%;
     padding: 1em;
     border-radius: 4px;
 }
@@ -380,11 +386,14 @@ footer p {
     .wrapper-text h2 {
         font-size: 1.5em
     }
-    .form label {
-        display: none
-    }
     .reset-btn {
         display: none
+    }
+    input {
+        width: initial
+    }
+    textarea {
+        width: 85%
     }
     .submit-btn {
         height: 95%;
@@ -413,34 +422,39 @@ footer p {
         padding-top: 120px;
     }
     .wrapper-text h1 {
-        font-size: 1.3em
+        font-size: 1.3em;
+        display: none
     }
     .wrapper-text h2 {
+        padding-top: 10rem; 
         font-size: 1em
     }
     .suggestions-form {
         padding-bottom: 75px
     }
     #games-selection {
-        padding: 75px 10%;
+        margin: 0;
+        padding-top: 65px;
+        padding-bottom: 65px;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 50%)
+        grid-template-rows: repeat(2, 50%);
+        grid-row-gap: 20px
     }
     .subheading {
         font-size: 1.1em
     }
     .card-image {
-        height: 250px;
+        height: 200px;
     }
     .game-card {
         width: 90%;
         margin: 0 5%;
     }
-    .form label {
-        display: none
-    }
     .form {
         display: block
+    }
+    input {
+        width: 80%
     }
     textarea {
         width: 80%;
