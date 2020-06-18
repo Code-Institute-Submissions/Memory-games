@@ -60,7 +60,7 @@
     won't look blurry and is always focusing on the game theme.
     Further down the page, each game has its own hero image which is used to help redirect the user to that particular game.
     This is more obvious when the user hovers over the content, as a slightly transparent overlay slides up with text that reads
-    "Let's Play!".
+    "Play!".
 
     - As stated above, the main hero image takes up the 50vh and this is the same for mobile and tablet. I smart trick was used
     for the smaller screen sizes so the Image wouldn't lose any of its quality. Instead of the entire Image resizing itself and
@@ -129,16 +129,6 @@
         
         - If the two cards don't match, they will simply flip back over and the player can try again.
         - If they do match, the cards will remain face up and allow the player to keep going. 
-
-
-
-   
-
-
-
-
-
-        
 
 <h3 align="center"><a href="https://github.com/joenapper/Memory-games/blob/master/README.md">Return to README.md</a></h3>
 
