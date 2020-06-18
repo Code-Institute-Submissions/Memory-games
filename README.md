@@ -83,6 +83,11 @@ The website has 3 main pages, 'Home'(the landing page), 'Simon Game' and 'Pairs 
     8. [Jasmine:](https://jasmine.github.io/)
         - Jasmine was used to test the JavaScript before Implementing It into the website.
 
+- ### APIs Used
+    1. [EmailJS:](https://www.emailjs.com/)
+        - The EmailJS API was used to allow users to send In new game Ideas they would like to see added to the site. 
+
+
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
