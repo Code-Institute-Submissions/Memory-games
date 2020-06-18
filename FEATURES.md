@@ -34,8 +34,8 @@
     really well with the flow of the site. The content is eye-catching and draws users in.
     The buttons are the crown and glory of this form. There are two buttons, "Reset" and "Submit". I used a smart
     box-shadow effect on these which, when they are clicked, makes it seem like the button has been pressed. I also
-    made it so that when the "Submit" button is clicked, the text changed from 'Submit' to 'Sent' which tells the user
-    their form has been sent.
+    made it so that when the "Submit" button is clicked, a spinning animation appears, telling the user their form
+    is being sent.
 
     - As the screen width size reduces into a tablet view, the form stays wrapped and still allows for plenty of
     text input room. I chose to remove the 'Reset' button on this view as it creates more room for the 'Submit'
