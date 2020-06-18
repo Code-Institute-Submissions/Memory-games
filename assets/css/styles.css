@@ -282,7 +282,37 @@ input:focus, textarea:focus {
 }
 .submit-btn {
     margin-top: 10px;
+    position: relative;
 }
+.submit-btn:after {
+    content: '';
+    animation: spin 500ms linear infinite;
+    position: absolute;
+    top: calc(50% - 0.5rem);
+    left: calc(50% - 0.5rem);
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    opacity: 0;
+}
+.submit-btn.is-loading {
+    color: transparent;
+}
+.submit-btn.is-loading:after {
+    opacity: 1;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(359deg)
+    }
+}
+
 .reset-btn {
     background-color: #1c75bc;
     opacity: 0.6;

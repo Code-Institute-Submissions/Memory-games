@@ -1,3 +1,4 @@
+// Sends Form
 function sendMail(suggestionForm) {
     emailjs.send("gmail", "rosie", {
         "from_name": suggestionForm.name.value,
@@ -11,27 +12,27 @@ function sendMail(suggestionForm) {
         function(error) {
             console.log('failed', error);
         }
+
     );
     return false;
 };
 
-//const input = document.querySelector('input');
+// Clears Form
 const nameClear = document.querySelector('#name');
 const emailClear = document.querySelector('#email');
 const textareaClear = document.querySelector('textarea');
-
 const submitButton = document.querySelector('.submit-btn');
 
-submitButton.addEventListener('click', clearForm);
-function clearForm() {
+submitButton.addEventListener('click', resetForm);
+
+function resetForm() {
+    // Loading Animation
+    this.classList.add('is-loading');
+    // Reset Textarea
     setTimeout(() => {
         nameClear.value = '';
         emailClear.value = '';
         textareaClear.value = '';
-        submitButton.textContent = 'SENT';
-    }, 300);
+        this.classList.remove('is-loading');
+    }, 800);
 };
-
-// BUGS: SUBMIT button needs to be changed so it will only change to SENT after information is inputted 
-
-
