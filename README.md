@@ -79,7 +79,7 @@ The website has 3 main pages, 'Home'(the landing page), 'Simon Game' and 'Pairs 
         - Web Formatter was used on all HTML, CSS, and JS to beautify code to keep it neat and easy to read. 
         This can also be done by utilizing Beautify Cmd (Shift + Alt + F) in GitPod.
     7. [Grammarly:](https://app.grammarly.com/)
-        - Grammarly was used on every page on the site as-well-as the 'README.md', and 'FEATURES.md' to correct any spelling/grammar mistakes. 
+        - Grammarly was used on every page on the site as-well-as the [README.md](https://github.com/joenapper/Memory-games/blob/master/README.md), and [FEATURES.md](https://github.com/joenapper/Memory-games/blob/master/FEATURES.md) to correct any spelling/grammar mistakes. 
     8. [Jasmine:](https://jasmine.github.io/)
         - Jasmine was used to test the JavaScript before Implementing It into the website.
 
@@ -90,9 +90,10 @@ The website has 3 main pages, 'Home'(the landing page), 'Simon Game' and 'Pairs 
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-    - [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](...link...)
-    - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](...link...)
+- ### W3C Validator
+
+    The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+    - [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](http://jigsaw.w3.org/css-validator/validator$link)
 
 - ### Testing User Stories from User Experience (UX) Section
 
@@ -111,12 +112,12 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     3. I want to be able to easily navigate throughout the site on any device to find content.
         1. The site has been designed to never to entrap the user. The navigation bar moves freely as the user scrolls up and down the page and triggers a JavaScript effect which adds a background to the header to avoid being unable to read the links. 
         2. At the bottom of each page, there is a 'Back To Top' bottom to further ensure the user never gets trapped.
-        3. On the Suggestions Form, after a form response is submitted, the 'Send' button changes to 'Sent' to verify to the user their message has been sent.
+        3. On the Suggestions Form, clicking the submit button creates a loading bar informing the user their message is being sent.
 
 - #### Returning Visitor Goals
     As a Returning Visitor...
     1. I want to play the games again and attempt to beat my previous scores.
-        1. The Simon game will run an infinite amount of rounds until the user clicks the wrong button. For each correct click, there is a turn counter in the center which will update and show how many correct buttons have been pressed in a row.
+        1. The Simon game will run an infinite amount of rounds until the user clicks the wrong button.
         2. For the pairs game, the user could time themselves and keep track of that to give themselves something to improve on.
 
     2. I want to easily send suggestions for new games and/or updates that can be added.
@@ -133,11 +134,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     - The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, and Safari browsers. 
     - The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy S10, iPhone 6s & iPhone X.
     - A large amount of testing was done to ensure that everything rendered and linked correctly on all browsers and a wide variety of devices.
-    - All games JavaScript code was tested in a separate document using Jasmine. 
+    - All games JavaScript code was tested in a separate workspace using Jasmine. 
     - Friends and Family members were asked to review the site and report feedback on any bugs and/or user experience issues/negative experiences.
-
-- ### Known Bugs
-    - NOT DOCUMENTED YET
 
 ## Deployment
 

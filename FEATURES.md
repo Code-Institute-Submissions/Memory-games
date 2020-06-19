@@ -21,7 +21,7 @@
 
     - In tablet view (screen width sizes between 992px to 767px) the logo remains over the left-hand side however, the
     links are replaced by a 'hamburger' icon which stays over to the right. On click of this icon, there is a quick 
-    animation and all the page links appear in column form over a subtle overlay. The overlay is slightly transparent so the
+    animation and all the page links slide in from the side. The background of this slide in menu is slightly transparent so the
     user can still see the content, but dark enough so the links stand out and can be seen clearly. 
 
     - In mobile view & smaller screen sized devices (screen width sizes under 767px) the navigation bar acts the same way
