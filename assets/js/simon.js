@@ -5,6 +5,8 @@ const bottomLeft = document.querySelector('.bottom-left-panel');
 
 const startButton = document.querySelector('#start');
 
+const panels = document.querySelectorAll('.panel');
+
 // Generates Sequence
 const getRandomPanel = () => {
     const panels = [topLeft, topRight, bottomRight, bottomLeft];
@@ -26,7 +28,7 @@ const flash = panel => {
 
             setTimeout(() => {
                 resolve();
-            },250)
+            },250);
 
 		}, 900);
 	});
@@ -52,9 +54,9 @@ const panelClicked = panelClicked => {
     } else {
 
         // End Game
-        alert('GAME OVER!')
+        alert('GAME OVER!');
 
-        window.location['reload']()
+        window.location['reload']();
     };
 };
 
@@ -77,15 +79,7 @@ startButton.addEventListener('click', (event) => {
 });
 
 // Click Each Panel
-topLeft.addEventListener('click', (event) => {
+panels.forEach(panel => panel.addEventListener('click', (event) => {
     panelClicked(event.currentTarget);
-}); 
-topRight.addEventListener('click', (event) => {
-    panelClicked(event.currentTarget);
-});
-bottomRight.addEventListener('click', (event) => {
-    panelClicked(event.currentTarget);
-});
-bottomLeft.addEventListener('click', (event) => {
-    panelClicked(event.currentTarget);   
-});
+    })
+);
