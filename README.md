@@ -1,6 +1,6 @@
 <h1 align="center">Resolve Games</h1>
 
-<h2 align="center"><a href="https://github.com/joenapper/Memory-games/blob/master/README.md"><img src="README-assets/learn-more-btn.png"></a> <img src="README-assets/small-simon.png"> <a href="#"><img src="README-assets/live-website-btn.png"></a></h2>
+<h2 align="center"><a href="https://github.com/joenapper/Memory-games/blob/master/README.md"><img src="README-assets/learn-more-btn.png"></a> <img src="README-assets/small-simon.png"> <a href="https://joenapper.github.io/Memory-games/"><img src="README-assets/live-website-btn.png"></a></h2>
 
 Resolve games is a website inspired by retro board games with the vision of bringing those much-loved classics back up to date and onto your device. Not only will visitors be able to play these games, but also leave suggestions for more games they would like to see added.
 
@@ -147,7 +147,7 @@ The website has 3 main pages, 'Home'(the landing page), 'Simon Game' and 'Pairs 
         3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
         4. Under "Source", click the dropdown called "None" and select "Master Branch".
         5. The page will automatically refresh.
-        6. Scroll back down through the page to locate the now published site [link](LIVE-Deployment-LINK) in the "GitHub Pages" section.
+        6. Scroll back down through the page to locate the now published site in the "GitHub Pages" section.
 
 ## Credits
 
