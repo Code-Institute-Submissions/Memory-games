@@ -28,13 +28,13 @@ function cardClicked() {
 function checkForMatch() {
         if (firstCard.dataset.color === secondCard.dataset.color) {
             // Match
-            disableCards()
-            combos()
-                
-            
+            disableCards();
+
+            combos();
+
         } else {
             // No match
-            enableCards()
+            enableCards();
         };
 };
 
@@ -45,14 +45,15 @@ function disableCards() {
 
 function combos() {
     combosFound++;
-            if (combosFound === 8) {
-                setTimeout(() => {
+    if (combosFound === 8) {
+        setTimeout(() => {
 
-                    alert('You Win!')
+            alert('You Win!');
 
-                    window.location['reload']()
-                }, 100);
-            }
+            window.location['reload']();
+
+        }, 100);
+    };
 };
 
 function enableCards() {
@@ -63,14 +64,14 @@ function enableCards() {
         secondCard.classList.add('color-hidden');
         lockBoard = false;
 
-        resetBoard()
+        resetBoard();
     }, 600);
 };
 
 function resetBoard() {;
     [cardClicked, lockBoard] = [false, false]
     [firstCard, secondCard] = [null, null];
-}
+};
 
 // Shuffles cards before game
 (function shuffle() {
