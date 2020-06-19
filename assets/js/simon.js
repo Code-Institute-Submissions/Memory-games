@@ -2,10 +2,9 @@ const topLeft = document.querySelector('.top-left-panel');
 const topRight = document.querySelector('.top-right-panel');
 const bottomRight = document.querySelector('.bottom-right-panel');
 const bottomLeft = document.querySelector('.bottom-left-panel');
-
 const startButton = document.querySelector('#start');
-
 const panels = document.querySelectorAll('.panel');
+let canClick = false;
 
 // Generates Sequence
 const getRandomPanel = () => {
@@ -34,8 +33,6 @@ const flash = panel => {
 	});
 };
 
-let canClick = false;
-
 // Check Panel Clicked Is Correct
 const panelClicked = panelClicked => {
     if(!canClick) return;
@@ -45,11 +42,15 @@ const panelClicked = panelClicked => {
     if (expectedPanel === panelClicked) {
         if(sequenceToGuess.length === 0) {
 
-            // Start New Round
+            setTimeout(() => {
+                // Start New Round
             sequence.push(getRandomPanel());
             sequenceToGuess = [...sequence];
 
             startFlashing();
+                
+            },1500);
+            
         }
     } else {
 
@@ -81,5 +82,6 @@ startButton.addEventListener('click', (event) => {
 // Click Each Panel
 panels.forEach(panel => panel.addEventListener('click', (event) => {
     panelClicked(event.currentTarget);
+    flash(panel)
     })
 );
