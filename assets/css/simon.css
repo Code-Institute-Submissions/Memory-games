@@ -2,6 +2,7 @@
 header {
     background-color: #1c75bc;
 }
+
 #simon {
     width: 100vw;
     height: 100vh;
@@ -9,6 +10,7 @@ header {
     padding: 100px 0;
     text-align: center  
 }
+
 .outer-circle {
     width: 800px;
     height: 800px;
@@ -16,36 +18,43 @@ header {
     background-color: black;
     display: inline-block
 }
+
 .all-panels {
     padding-top: 45px;  
 }
+
 .panel {
     width: 350px;
     height: 350px;
     display: inline-block;
     cursor: pointer;
-
     opacity: 0.5
 }
+
 .panel:hover {
     box-shadow: inset 0px 0px 0px 3px black
 }
+
 .top-left-panel {
     border-radius: 100% 0 0 0;
     background-color: green
 }
+
 .top-right-panel {
     border-radius: 0 100% 0 0;
     background-color: red
 }
+
 .bottom-right-panel {
     border-radius: 0 0 100% 0;
     background-color: blue
 }
+
 .bottom-left-panel {
     border-radius: 0 0 0 100%;
     background-color: yellow
 }
+
 .center-circle {
     width: 400px;
     height: 400px;
@@ -56,13 +65,16 @@ header {
     z-index: 1;
     position: absolute;
 }
+
 .center-circle-text {
     margin-top: 70px
 }
+
 .center-circle h3 {
     font-size: 3em;
     color: #fff
 }
+
 #start {
     width: 100px;
     padding: 1em;
@@ -71,19 +83,22 @@ header {
     box-shadow: 0px 3px grey;
     background-color: #fff;
 }
+
 .remove-btn {
     display: none
 }
+
 #start:hover {
     background-color: #fff
 }
+
 #start:active {
     box-shadow: none;
 }
+
 .active {
     opacity: 1
 }
-/* ---------------------------------- */
 
 /* Media Queries---------------------------------- */
 /*Tablet*/
@@ -93,43 +108,51 @@ header {
         padding: 0;
         overflow-X: hidden;
     }
+
     body {
         margin: 0;
         padding: 0;
         width: 100%;
         overflow-X: hidden;
     }
+
     #simon {
     padding-top: 175px;
     padding-bottom: 0
     }
+
     .outer-circle {
     width: 700px;
     height: 700px;
     }
+
     .all-panels {
     padding-top: 25px;
     }
+
     .panel {
     width: 320px;
     height: 320px;
     }
+
     .center-circle {
     width: 350px;
     height: 350px;
     }
+
     .center-circle-text {
     margin-top: 80px
     }
+
     .center-circle h3 {
     font-size: 2em;
     }
+
     #start {
     width: 100px;
     padding: 1.5em;
     }
 }
-/*-----*/
 
 /*Mobile*/
 @media screen and (max-width: 767px) {
@@ -138,41 +161,49 @@ header {
         padding: 0;
         overflow-X: hidden;
     }
+
     body {
         margin: 0;
         padding: 0;
         width: 100%;
         overflow-X: hidden;
     }
+
     #simon {
     padding-top: 175px;
     padding-bottom: 0
     }
+
     .outer-circle {
     width: 350px;
     height: 350px;
     }
+
     .all-panels {
     padding-top: 25px;
     }
+
     .panel {
     width: 150px;
     height: 150px;
     }
+
     .center-circle {
     width: 150px;
     height: 150px
     }
+
     .center-circle-text {
         margin: 0
     }
+
     .center-circle h3 {
     font-size: 1em;
     }
+
     #start {
     width: 80px;
     padding: 0.70em;
     }
 }
-/*-----*/
 /* ---------------------------------- */

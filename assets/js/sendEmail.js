@@ -12,7 +12,6 @@ function sendMail(suggestionForm) {
         function(error) {
             console.log('failed', error);
         }
-
     );
     return false;
 };

@@ -2,6 +2,7 @@
 header {
     background-color: #1c75bc;
 }
+
 #pairs {
     width: 50vw;
     height: 85vh;
@@ -11,6 +12,7 @@ header {
     display: flex;
     flex-wrap: wrap  
 }
+
 .card {
     display: inline-block;
     width: 24%;
@@ -19,46 +21,57 @@ header {
     cursor: pointer;
     border-radius: 5px
 }
+
 .card:hover {
     box-shadow: inset 0px 0px 0px 3px #333
 }
+
 .blue {
     background-color: blue
 }
+
 .red {
     background-color: red
 }
+
 .green {
     background-color: green
 }
+
 .purple {
     background-color: purple
 }
+
 .black {
     background-color: black
 }
+
 .orange {
     background-color: orange
 }
+
 .yellow {
     background-color: yellow
 }
+
 .pink {
     background-color: pink
 }
+
 .color-hidden {
     background-color: #eee;
     cursor: pointer;
     transition: .5s
 }
+
 .sample {
     cursor: default;
     transition: .5s
 }
+
 .sample:hover {
     box-shadow: none
 }
-/* ---------------------------------- */
 
 /* Media Queries---------------------------------- */
 /*Tablet*/
@@ -68,19 +81,20 @@ header {
         padding: 0;
         overflow-X: hidden;
     }
+
     body {
         margin: 0;
         padding: 0;
         width: 100%;
         overflow-X: hidden;
     }
+
     #pairs {
         width: 80vw;
         height: 70vh;
         padding: 160px 10%; 
     }
 }
-/*-----*/
 
 /*Mobile*/
 @media screen and (max-width: 767px) {
@@ -89,18 +103,18 @@ header {
         padding: 0;
         overflow-X: hidden;
     }
+
     body {
         margin: 0;
         padding: 0;
         width: 100%;
         overflow-X: hidden;
     }
+    
     #pairs {
         width: 80vw;
         height: 65vh;
         padding: 140px 10%
     }
 }
-/*-----*/
-
 /* ---------------------------------- */

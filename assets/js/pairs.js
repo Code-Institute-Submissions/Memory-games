@@ -1,5 +1,4 @@
 const cards = document.querySelectorAll('.card');
-
 let isCardClicked = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -15,13 +14,12 @@ function cardClicked() {
         // First card
         isCardClicked = true;
         firstCard = this;
-
         return;
-    };
+    }
     // Second card
     isCardClicked = false;
     secondCard = this;
-        
+    
     checkForMatch();
 };
 
@@ -29,9 +27,7 @@ function checkForMatch() {
         if (firstCard.dataset.color === secondCard.dataset.color) {
             // Match
             disableCards();
-
             combos();
-
         } else {
             // No match
             enableCards();
@@ -47,29 +43,24 @@ function combos() {
     combosFound++;
     if (combosFound === 8) {
         setTimeout(() => {
-
             alert('You Win!');
-
             window.location['reload']();
-
         }, 100);
     };
 };
 
 function enableCards() {
     lockBoard = true;
-
     setTimeout(() => {
         firstCard.classList.add('color-hidden');
         secondCard.classList.add('color-hidden');
         lockBoard = false;
-
         resetBoard();
     }, 600);
 };
 
 function resetBoard() {;
-    [cardClicked, lockBoard] = [false, false]
+    [cardClicked, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 };
 
@@ -81,4 +72,5 @@ function resetBoard() {;
     });
 })();
 
+// Click Each Card
 cards.forEach(card => card.addEventListener('click', cardClicked));
