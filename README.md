@@ -6,7 +6,7 @@ Resolve games is a website inspired by retro board games with the vision of brin
 
 The website has 3 main pages, 'Home'(the landing page), 'Simon Game' and 'Pairs Game', each of which contains a feedback section where visitors can leave their suggestions. Also, features and games are fully responsive meaning everything will still work on mobile devices.  
 
-<h2 align="center"><img src="README-assets/Title.png"></h2>
+<h2 align="center"><img src="README-assets/README-banner.png"></h2>
 
 ## User Experience (UX)
 
