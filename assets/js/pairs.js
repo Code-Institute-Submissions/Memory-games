@@ -3,6 +3,7 @@ const cards = document.querySelectorAll('.card');
 let isCardClicked = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let combosFound = 0;
 
 function cardClicked() {
     if (lockBoard) return;
@@ -28,6 +29,9 @@ function checkForMatch() {
         if (firstCard.dataset.color === secondCard.dataset.color) {
             // Match
             disableCards()
+            combos()
+                
+            
         } else {
             // No match
             enableCards()
@@ -37,6 +41,18 @@ function checkForMatch() {
 function disableCards() {
     firstCard.removeEventListener('click', cardClicked);
     secondCard.removeEventListener('click', cardClicked);
+};
+
+function combos() {
+    combosFound++;
+            if (combosFound === 8) {
+                setTimeout(() => {
+
+                    alert('You Win!')
+
+                    window.location['reload']()
+                }, 100);
+            }
 };
 
 function enableCards() {
