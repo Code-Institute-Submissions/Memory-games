@@ -190,7 +190,7 @@ nav {
   display: block;
   width: 60%;
   padding: 0 20%;
-  height: 400;
+  height: 400px;
 }
 .overlay {
   position: absolute;
@@ -265,9 +265,10 @@ button {
     border: 1px solid #1c75bc;
     font-family: Arial, Helvetica, sans-serif
 }
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     box-shadow: 0 0 4px rgba(28, 117, 188, 1);
-    border: 1px solid rgb(28, 117, 188))
+    border: 1px solid rgb(28, 117, 188);
 }
 ::placeholder {
     color: #1c75bc;
@@ -318,7 +319,6 @@ input:focus, textarea:focus {
         transform: rotate(359deg)
     }
 }
-
 .reset-btn {
     background-color: #1c75bc;
     opacity: 0.6;
@@ -426,7 +426,7 @@ footer p {
         display: none
     }
     .wrapper-text h2 {
-        padding-top: 10rem; 
+        padding-top: 8rem; 
         font-size: 1em
     }
     .suggestions-form {

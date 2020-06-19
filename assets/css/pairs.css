@@ -58,6 +58,7 @@ header {
 .sample:hover {
     box-shadow: none
 }
+/* ---------------------------------- */
 
 /* Media Queries---------------------------------- */
 /*Tablet*/
@@ -94,10 +95,6 @@ header {
         width: 100%;
         overflow-X: hidden;
     }
-    /*.nav-link a {
-        display: block;
-        padding: 0;
-    }*/
     #pairs {
         width: 80vw;
         height: 65vh;
