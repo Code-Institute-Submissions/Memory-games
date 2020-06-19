@@ -71,6 +71,9 @@ header {
     cursor: pointer;
     box-shadow: 0px 3px grey;
 }
+.remove-btn {
+    display: none
+}
 #start:hover {
     background-color: #fff
 }
@@ -78,7 +81,7 @@ header {
     box-shadow: none;
 }
 .active {
-    /*background-color: #fff;-------------------------------------------------------------------- OPINION------------------------------*/ 
+    /*background-color: #fff;*/
     opacity: 1
 }
 
